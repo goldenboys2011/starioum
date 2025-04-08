@@ -13,6 +13,8 @@ import {
 } from "@/components/ui/navigation-menu"
 import Link from "next/link";
 import { ThemeProvider } from "@/components/theme-provider"
+import { AnimatedGridPattern } from "@/components/magicui/animated-grid-pattern";
+import { cn } from "@/lib/utils";
 
 
 const geistSans = Geist({
@@ -46,6 +48,16 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
       >
+      <AnimatedGridPattern
+        numSquares={30}
+        maxOpacity={0.1}
+        duration={3}
+        repeatDelay={1}
+        className={cn(
+          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+        )}
+      />
 
       <NavigationMenu className="content-center justify-self-center mt-4">
         <NavigationMenuList>          
