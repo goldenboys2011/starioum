@@ -62,7 +62,7 @@ export default function RootLayout({
               <ul className="grid gap-3 p-4 md:w-[50px] lg:w-[150px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-1">
                   <NavigationMenuLink asChild>
-                    <Link href="/newssnhk">newsSnhk</Link>
+                    <Link href="/starnews">starNews</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link href="/graphs">Graphs</Link>

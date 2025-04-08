@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
     <footer className="content-center justify-self-center mt-8">
-      <TypingAnimation className="text-5xl font-mono">NewsSnhk</TypingAnimation>
+      <TypingAnimation className="text-5xl font-mono">StarNews</TypingAnimation>
     </footer>
     </>
   );
