@@ -1,8 +1,18 @@
+"use client"
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { WordRotate } from "@/components/magicui/word-rotate";
+import { useEffect } from "react";
 export default function Home() {
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto"; // Reset when component unmounts
+    };
+  }, []);
+    
   return (
     <>
     <footer className="content-center justify-self-center mt-8">
