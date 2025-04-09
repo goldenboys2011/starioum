@@ -7,9 +7,28 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
+    // Save the current scroll position
+    const scrollY = window.scrollY;
+    
+    // Lock scroll
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
+
     return () => {
-      document.body.style.overflow = "auto";
+      // Restore scroll
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.overflow = '';
+      document.body.style.width = '';
+
+      // Restore scroll position
+      window.scrollTo(0, scrollY);
     };
   }, []);
 
