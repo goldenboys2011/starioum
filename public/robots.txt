@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /gh
+Disallow: /login/
+
+Sitemap: https://sotnhk.hackclub.app/sitemap.xml
