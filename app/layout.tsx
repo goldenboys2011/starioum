@@ -71,8 +71,8 @@ export default function RootLayout({
           <NavigationMenuItem>
             <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3 p-4 md:w-[50px] lg:w-[150px] lg:grid-cols-[.75fr_1fr]">
-                <li className="row-span-1">
+              <ul className="flex gap-3 p-4 md:w-[200px] lg:w-[250px]">
+                <li className="flex space-x-3">
                   <NavigationMenuLink asChild>
                     <Link href="/starnews">starNews</Link>
                   </NavigationMenuLink>
@@ -80,7 +80,7 @@ export default function RootLayout({
                     <Link href="/graphs">Graphs</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/theorys">Theorys</Link>
+                    <Link href="/theories">Theories</Link>
                   </NavigationMenuLink>
                 </li>
               </ul>
@@ -88,9 +88,14 @@ export default function RootLayout({
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <NavigationMenuTrigger>Community</NavigationMenuTrigger>
+            <NavigationMenuContent className="items-center text-center">
+              <ul className="flex justify-center gap-3 p-4 md:w-[200px] lg:w-[250px]">
+                <li className="flex justify-center">
+                  <NavigationMenuLink asChild>
+                    <Link href="/join">Join Us</Link>
+                  </NavigationMenuLink>
+                </li>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>

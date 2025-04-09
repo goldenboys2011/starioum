@@ -8,15 +8,16 @@ import { ArrowDownFromLine } from "lucide-react";
 export default function Home() {
 
   return (
-    <div className="snap-y snap-mandatory overflow-y-scroll h-screen no-scrollbar">
-      <div className="snap-always snap-center">
-        <footer className="text-center mt-8">
-          <TypingAnimation className="text-3xl md:text-5xl font-mono">
-            Starioum ✦
-          </TypingAnimation>
-        </footer>
+    <div className="pt-[4rem] mt-8 snap-y snap-mandatory overflow-y-scroll h-screen no-scrollbar">
 
+      <div className="snap-always h-screen snap-start relative">
+        <footer className="text-center mt-8">
+            <TypingAnimation className="text-3xl md:text-5xl font-mono">
+              Starioum ✦
+            </TypingAnimation>
+          </footer>
         <div className="mt-30 px-4 flex flex-col gap-20 w-full max-w-9/10 mx-auto">
+
           {/* Section 1 - Left Aligned */}
           <div className="self-start w-full sm:w-1/5">
             <BoxReveal boxColor={"#232323"} duration={0.5}>
@@ -57,16 +58,13 @@ export default function Home() {
               </h2>
             </BoxReveal>
           </div>
-
-          <div
+        </div>
+        <div
             key="scrollIcon"
-            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1 w-10 h-10 rounded-full border-2 border-gray-600 flex items-center justify-center"
+            className="absolute bottom-22 left-1/2 transform -translate-x-1/2 mb-1 w-10 h-10 rounded-full border-2 border-gray-600 flex items-center justify-center"
           >
             <ArrowDownFromLine className="w-5 h-5" />
           </div>
-
-
-        </div>
       </div>
 
       <div className="mt-100 px-4 flex flex-col gap-20 w-full max-w-9/10 mx-auto snap-always snap-center">
